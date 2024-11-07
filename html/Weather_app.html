@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="../css/Weather_app.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search City">
+        </div>
+        <h1 id="city-title"></h1>
+        <h3 id="date"></h3>
+        <button id="weather-btn"></button>
+        <div class="img-div"></div>
+        <div class="temperature">
+            <h3 class="temp1"></h3>
+            <h2 class="temp2"></h2>
+            <h2 class="temp3"></h2>
+        </div>
+        <div class="weather-details">
+            <div><i class="fa-solid fa-temperature-three-quarters"></i>  Feels Like <h3 class="feel"></h3></div>
+            <div><i class="fa-solid fa-droplet"></i>  Humidity <h3 class="humidity"></h3></div>
+            <div><i class="fa-solid fa-wind"></i>  Wind <h3 class="wind"></h3></div>
+            <div><i class="fas fa-tachometer-alt"></i> Pressure <h3 class="pressure"></h3></div>
+        </div>
+    </div>
+    <script src="../js/Weather_app.js"></script>
+</body>
+</html>
