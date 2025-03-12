@@ -1,0 +1,165 @@
+/* Base styles remain unchanged */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5e7e7, #f3bebe, #ffefba);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    font-family: 'Merriweather', serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    max-width: 100%;
+    color: #333;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+#search-input {
+    width: calc(100% - 30px);
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    background-color: #fff;
+    outline: none;
+}
+
+#city-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+#date, .temperature h3, .temperature h2, .weather-details h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #555;
+}
+
+#weather-btn {
+    font-family: 'Merriweather', serif;
+    background-color: #ffe1e1;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+}
+
+.img-div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.temperature {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.weather-details div {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.weather-details i {
+    background-color: rgba(255, 255, 255, 0.6); /* Light background for icons */
+    padding: 5px;
+    border-radius: 50%; /* Optional: Round background */
+}
+
+.weather-details h3 {
+    margin-left: 5px; /* Adjust the spacing */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    body {
+        height: 100vh;
+        padding: 0 10px;
+    }
+
+    .weather-app {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #city-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #search-input {
+        font-size: 14px;
+        padding: 8px 40px;
+    }
+
+    #weather-btn {
+        font-size: 14px;
+        padding: 6px 16px;
+        margin-bottom: 10px;
+    }
+
+    .temperature {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .weather-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .weather-details div {
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .img-div {
+        margin: 15px 0;
+    }
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    body {
+        height: 120vh;
+    }
+}
